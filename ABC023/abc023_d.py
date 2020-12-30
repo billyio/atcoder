@@ -1,4 +1,4 @@
-# just read 
+# just read and understand the code
 
 from sys import stdin
 input = stdin.buffer.readline
