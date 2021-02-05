@@ -1,6 +1,6 @@
 import math
-def ncr(n,r):
-    return(math.factorial(n)//(math.factorial(r)*math.factorial(n-r)))
+def combinations_count(n, r):
+    return math.factorial(n) // (math.factorial(n - r) * math.factorial(r))
  
-n = int(input())
-print(ncr(n-1,11))
+N = int(input())
+print(combinations_count(N-1,11))
