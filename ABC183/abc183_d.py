@@ -32,14 +32,15 @@ N, W = map(int, input().split())
 STP = [list(map(int, input().split())) for _ in range(N)]
  
 item_num = max([i[1] for i in STP])
+
 An = [0] * (item_num + 2)
- 
+
 for s, t, p in STP:
     An[s] += p
     An[t] -= p
-print(An)
+    
 Bn = list(itertools.accumulate(An))
-print(Bn)
+
 if max(Bn) > W:
     print('No')
 else:
